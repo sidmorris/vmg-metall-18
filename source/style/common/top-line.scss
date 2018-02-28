@@ -1,0 +1,17 @@
+.top-line {
+  position: relative;
+}
+
+.top-line__logo {
+  width: 200px;
+  height: auto;
+  top: 40px;
+  left: 100px;
+  position: absolute;
+}
+.top-line__phone{
+  position: absolute;
+  top: 40px;
+  right: 200px;
+  font-size: 1.7em;
+}

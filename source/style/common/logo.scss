@@ -1,13 +1,9 @@
 .logo {
-    width: 200px;
     display: inline-block;
-    .logo-svg {
-        width: 200px;
-        height: auto;
-    }
-    &--white {
-        .logo-svg {
-            fill: #fff;
-        }
-    }
+    min-width: 80px;
+    height: auto;
+}
+
+.logo--white {
+    fill: #fff;
 }
