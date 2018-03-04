@@ -1,7 +1,14 @@
-@import "../../node_modules/uikit/src/scss/variables.scss";
-@import "../../node_modules/uikit/src/scss/mixins.scss";
+@import "_font.scss";
+// @import "../../node_modules/uikit/src/scss/variables.scss";
+// @import "../../node_modules/uikit/src/scss/mixins.scss";
+// 3. Your custom variavles.
+$base-font: 'Open-sans', sans-serif;
 // 3. Your custom mixin overwrites.
 body{
+    font-family: $base-font;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: normal;
     height: 3000px;
 }
 @import "common/**/*.scss";

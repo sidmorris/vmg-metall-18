@@ -1,6 +1,27 @@
-.header{
+.header {
     position: relative;
-    min-height: 800px;
+    min-height: 700px;
     background-size: cover;
     background-position: 100% 0;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__promo {
+    width: 550px;
+    margin-left: 10%;
+}
+
+.header__icon-nav {
+    margin-right: 25px;
+}
+
+.header__top-line {
+    padding-top: 15px;
+    margin-left: 10%;
+    margin-right: 30px;
 }

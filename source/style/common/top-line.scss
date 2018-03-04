@@ -1,17 +1,14 @@
 .top-line {
-  position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .top-line__logo {
-  width: 200px;
-  height: auto;
-  top: 40px;
-  left: 100px;
-  position: absolute;
+    width: 200px;
+    margin-top: 15px;
 }
-.top-line__phone{
-  position: absolute;
-  top: 40px;
-  right: 200px;
-  font-size: 1.7em;
+
+.top-line__phone {
+    margin-top: 5px;
+    font-size: 1.3em;
 }
