@@ -1,11 +1,37 @@
 .icon-nav {
     display: flex;
-    flex-direction: column;
-    width: 80px;
-}
-
-.icon-nav__item {
-    fill: aqua;
-    display: block;
-    flex-basis: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    a {
+        color: $main-nav-color;
+        transition: color 0.2s ease ;
+        .icon {
+            fill: $main-nav-color;
+            transition: fill 0.2s ease;
+        }
+    }
+    a:hover {
+        text-decoration: none;
+        color:$main-nav-color-hover;
+        .icon {
+          fill: $main-nav-color-hover;
+      }
+    }
+    &__item {
+        width: 70px;
+        height: 70px;
+        .icon {
+            width: inherit;
+            height: inherit;
+            fill: $main-nav-color; // fill: aqua;
+            padding-top: 5px; // padding-bottom: 5px;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 300;
+        text-align: center;
+    }
 }

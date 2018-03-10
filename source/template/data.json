@@ -1,0 +1,47 @@
+{
+  "svgNavHeader": {
+    "besedka": {
+      "id": "besedka",
+      "text": "Беседки"
+    },
+    "lestnica": {
+      "id": "lestnica",
+      "text": "Лестницы"
+    },
+    "naves": {
+      "id": "naves",
+      "text": "Навесы"
+    },
+    "reshetka": {
+      "id": "reshetka",
+      "text": "Решетки"
+    },
+    "mebel": {
+      "id": "mebel",
+      "text": "Мебель"
+    },
+    "mangal": {
+      "id": "mangal",
+      "text": "Мангалы"
+    }
+  },
+  "mainNavMenu": {
+    "home": {
+      "link": "/",
+      "menu": "Главная",
+      "style":"active"
+    },
+    "catalog": {
+      "link": "#catalog",
+      "menu": "Каталог"
+    },
+    "gallery": {
+      "link": "#gallery",
+      "menu": "Фотогалерея"
+    },
+    "contact": {
+      "link": "#contact",
+      "menu": "Контакты"
+    }
+  }
+}

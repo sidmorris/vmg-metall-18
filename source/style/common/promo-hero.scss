@@ -1,7 +1,10 @@
-.promo-hero{
-    color: #ffffff;
+.promo-hero {
+    color: #fff;
+    font-weight: 300;
+    text-shadow: $main-text-shadow;
 }
-.promo-hero__title{
-    font-weight: normal;
+
+.promo-hero__title {
+    font-weight: inherit;
     font-size: 2.1em;
 }

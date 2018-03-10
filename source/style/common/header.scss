@@ -1,27 +1,33 @@
 .header {
-    position: relative;
-    min-height: 700px;
-    background-size: cover;
+    position:            relative;
+    min-height:          500px;
+    background-size:     cover;
     background-position: 100% 0;
 }
 
 .header__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:             flex;
+    flex-direction: column;
+    justify-content:     flex-start;
+    align-items:         flex-start;
 }
 
 .header__promo {
-    width: 550px;
-    margin-left: 10%;
+    width:               550px;
+    margin-left:         10%;
+    margin-top:          60px;
 }
 
 .header__icon-nav {
-    margin-right: 25px;
+    width:               550px;
+    margin-left:         10%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(224, 224, 224);
 }
 
 .header__top-line {
-    padding-top: 15px;
-    margin-left: 10%;
-    margin-right: 30px;
+    padding-top:         25px;
+    margin-left:         10%;
+    margin-right:        30px;
 }

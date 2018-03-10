@@ -1,6 +1,26 @@
-.phone{
+.phone {
     font-family: 'Open-sans', sans-serif;
+    &__icon {
+        @include cf;
+        display: inline-block;
+        .icon {
+            vertical-align: middle;
+            stroke: $main-nav-color;
+            stroke-width: 1;
+            fill: none;
+            width: 30px;
+            height: 20px;
+            // width: inherit;
+            // height: inherit;
+        }
+    }
+    &__namber {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
-.phone--wight{
-    color: #ffffff;
+
+.phone--white {
+    color: $main-nav-color;
+    text-shadow: $main-text-shadow;
 }

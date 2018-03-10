@@ -1,14 +1,19 @@
 .top-line {
     display: flex;
     justify-content: space-between;
-}
+    align-items: top;
+    &__logo {
+        width: 150px;
+        // margin-top: 15px;
+    }
+    
+    &__phone {
+        // margin-top: 5px;
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+    &__main-nav{
+        font-size: 1.3em;
 
-.top-line__logo {
-    width: 200px;
-    margin-top: 15px;
-}
-
-.top-line__phone {
-    margin-top: 5px;
-    font-size: 1.3em;
+    }
 }

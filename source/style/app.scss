@@ -1,17 +1,35 @@
-@import "_font.scss";
+@import "vars.scss";
+@import "mixins.scss";
+@import "font.scss";
+// @import '../../node_modules/bootstrap/scss/bootstrap-reboot';
+// @import '../../node_modules/bootstrap/scss/bootstrap-grid';
 // @import "../../node_modules/uikit/src/scss/variables.scss";
 // @import "../../node_modules/uikit/src/scss/mixins.scss";
 // 3. Your custom variavles.
-$base-font: 'Open-sans', sans-serif;
+$base-font: 'Open-sans',
+sans-serif;
 // 3. Your custom mixin overwrites.
-body{
+body {
     font-family: $base-font;
     font-size: 16px;
     line-height: 1.75;
     font-weight: normal;
     height: 3000px;
 }
+
+// .icon{
+//     width: inherit;
+//     height: inherit;
+// }
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 1;
+    stroke: currentColor;
+    fill: none;
+}
+
 @import "common/**/*.scss";
 // 4. Import UIkit
-// @import "_uikit-entry.scss";
 // @import "_uikit-entry.scss";

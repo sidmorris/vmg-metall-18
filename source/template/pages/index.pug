@@ -9,14 +9,37 @@ block content
     .top-line.header__top-line
       a.top-line__logo.logo.logo--white(href="/")
         +logo
-      .top-line__phone.phone.phone--wight +7(000) 000-00-00
+      .main-nav
+        ul.main-nav__list
+          each i in mainNavMenu
+            - active = i.style || ''
+            li(class=`main-nav__item ${active}`)
+              a.main-nav__link(href= i.link)= i.menu
+      .top-line__phone.phone
+        .phone__icon
+          +icon("phone") 
+        .phone__namber.phone--white +7 (000) 000-00-00
     .header__wrap
       .promo-hero.header__promo
         h1.promo-hero__title Металлоконструкции на заказ
-        p.promo-hero__desk Изготовление изделий из металла, любой сложности. Мангалы нестардатных размеров, ограждения для цветников и клумб, навесы для автомобилей, садовая мебель и многое другое для дачи и дома.
+        p.promo-hero__desk 
+          | Изготовление изделий из металла, любой сложности.
+          | Мангалы нестандартных размеров, ограждения для цветников и клумб,
+          | навесы для автомобилей, садовая мебель и многое другое для дачи и дома.
       .icon-nav.header__icon-nav
-        +sprite-svg("icon-nav__item", '#besedka', '#naves', '#lestnica', '#mangal', '#mebel', '#reshetka')
+        each item in svgNavHeader
+          a(href="#" + item.id)
+            .icon-nav__item
+              +icon(item.id)
+              .icon-nav__title= item.text
 
-
-
- 
+  section#catalog.s-catalog
+    .s-catalog__services.services
+      each i in [1,2,3,4,]
+        .services__item
+          .services-image
+            .services-image__photo(style="background-image: url(assets/img/produkt/naves.jpg);")
+          .services-content
+            h3.services-content__title= 'title ' + i
+            .services-content__desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, asperiores!
+            a(href="#").services-content__btn Подробнее

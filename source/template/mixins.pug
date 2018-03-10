@@ -39,8 +39,13 @@ mixin logo()
     L41.3,18.9L41.3,18.9z M51.5,45.3L39.6,20.4c-3.9,0.1-7.4,1.5-10,3.7c-2.7,2.3-4.3,5.3-4.3,8.7c0,3.4,1.7,6.5,4.3,8.7\
     c2.7,2.3,6.5,3.7,10.7,3.7H51.5L51.5,45.3z")
 
-mixin sprite-svg(style, ...items)
-  each n in items
-    svg(class=style)
-      use(xlink:href=`assets/img/sprite.svg${n}`)
+
+mixin icon(name,mod)
+  - var modificator = mod || ''
+  if modificator
+    svg(class="icon icon-" + name + ' ' + "icon--" + modificator)
+      use(xlink:href="assets/img/sprite.svg#" + name)
+  else
+    svg(class="icon icon-" + name)
+      use(xlink:href="assets/img/sprite.svg#" + name)
 
