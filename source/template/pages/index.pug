@@ -3,6 +3,7 @@ extends ../_template
 append variables
   - var title = 'Home page';
   - var pageClass = 'is-home';
+  - var nGallery = 1;
 
 block content
   .header(style="background-image: url(assets/img/header-bg.jpg);")
@@ -43,3 +44,12 @@ block content
             h3.services-content__title= 'title ' + i
             .services-content__desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, asperiores!
             a(href="#").services-content__btn Подробнее
+  section#gallery.s-gallery
+    h2.s-gallery__title Фотогалерея
+    .s-gallery__content
+      .fotorama
+        while nGallery < 15
+          img(src=`assets/img/rabota/${nGallery++}.jpg`, alt="")
+  section#contact.s-contact
+    .s-contact__map
+    .s-contact__adress

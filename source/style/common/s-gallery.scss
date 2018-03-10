@@ -1,0 +1,85 @@
+.fotorama__arr,
+.fotorama__fullscreen-icon,
+.fotorama__video-close,
+.fotorama__video-play
+{
+    background: url(../../assets/img/fotorama.png) no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:2dppx)
+{
+    .fotorama__arr,
+    .fotorama__fullscreen-icon,
+    .fotorama__video-close,
+    .fotorama__video-play
+    {
+        background: url(../../assets/img/fotorama@2x.png) 0 0/96px 160px no-repeat;
+    }
+}
+
+.s-gallery
+{
+	        background-image: url(../../assets/img/gallery-bg.jpg);
+        background-size: cover;
+
+    .fotorama
+    {
+    	&__wrap{
+    		border: 2px solid #fff;
+    	}
+        &__nav-wrap
+        {
+            position: absolute;
+            bottom: 5px;
+
+            width: 100%;
+            padding: 0 67px ;
+        }
+        &__thumb
+        {
+            box-sizing: border-box;
+						// padding: 0 3px;
+            border: 2px solid #fff;
+        }
+        &__arr
+        {
+            width: 40px;
+            height: 40px;
+
+            border-radius: 50%;
+            background-color: #fff;
+            background-size: cover;
+        }
+        &__arr--next
+        {
+            right: 20px;
+
+            background-image: url(../../assets/img/sprite/chevron-right.svg);
+        }
+        &__arr--prev
+        {
+            left: 20px;
+
+            background-image: url(../../assets/img/sprite/chevron-left.svg);
+        }
+    }
+    &__title{
+			text-align: center;
+			color: $main-nav-color;
+			font-size: 2em;
+			font-weight: 300;
+			padding-top: 20px;
+			padding-bottom: 20px;
+    }
+    &__content
+    {
+        display: flex;
+					padding-bottom: 60px;
+
+        min-height: 500px;
+        // background-color: #000;
+
+
+        justify-content: center;
+    }
+}
