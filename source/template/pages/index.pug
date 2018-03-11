@@ -6,7 +6,7 @@ append variables
   - var nGallery = 1;
 
 block content
-  .header(style="background-image: url(assets/img/header-bg.jpg);")
+  #header.header(style="background-image: url(assets/img/header-bg.jpg);")
     .top-line.header__top-line
       a.top-line__logo.logo.logo--white(href="/")
         +logo
@@ -15,7 +15,7 @@ block content
           each i in mainNavMenu
             - active = i.style || ''
             li(class=`main-nav__item ${active}`)
-              a.main-nav__link(href= i.link)= i.menu
+              a.main-nav__link(href=`${i.link}`)= i.menu
       .top-line__phone.phone
         .phone__icon
           +icon("phone") 
@@ -29,7 +29,7 @@ block content
           | навесы для автомобилей, садовая мебель и многое другое для дачи и дома.
       .icon-nav.header__icon-nav
         each item in svgNavHeader
-          a(href="#" + item.id)
+          a(href=`#modal-${item.id}`  uk-toggle)
             .icon-nav__item
               +icon(item.id)
               .icon-nav__title= item.text
@@ -51,5 +51,41 @@ block content
         while nGallery < 15
           img(src=`assets/img/rabota/${nGallery++}.jpg`, alt="")
   section#contact.s-contact
-    .s-contact__map
-    .s-contact__adress
+    .s-contact__map.map
+      //- .map__content
+         script( type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sD2sMSNBBz0-22QYYnb2Y9aP0lbSn9IL&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true")
+    .s-contact__adress.adress
+      .adress__title Контакты
+      .adress__content
+        .adress__location
+          +icon('location')  
+          p
+            |Московская обл. г.Балашиха,
+            br
+            | ул.Пехра-Покровская, д.8А.
+        .adress__mail
+          +icon('mail')
+          p ivan160881@mail.ru
+        .adress__phone
+          +icon('phone')
+          p +7 (000) 000 00-00
+  footer.footer
+    .footer__content
+      a.footer__logo(href="/")
+        +icon('site-logo')
+      .footer__menu.catalog-menu
+        ul.catalog-menu__list
+          each i in svgNavHeader
+            li.catalog-menu__item
+              a(href="").catalog-menu__link= i.text
+  a#toTop(href="#header").too-top
+    +icon('chevron-up')
+
+  #modal-besedka.uk-modal-full('uk-modal')
+    .uk-modal-dialog
+      button(class="uk-modal-close-full uk-close-large" type="button" uk-close)
+      .modal-body
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quia quam assumenda facilis ab aut, sunt fuga et cum fugit tempore nihil. Ex optio similique necessitatibus minima harum porro reprehenderit nostrum impedit, at. Vitae, vero, repudiandae. Vero deleniti reprehenderit animi.
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quia quam assumenda facilis ab aut, sunt fuga et cum fugit tempore nihil. Ex optio similique necessitatibus minima harum porro reprehenderit nostrum impedit, at. Vitae, vero, repudiandae. Vero deleniti reprehenderit animi.
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quia quam assumenda facilis ab aut, sunt fuga et cum fugit tempore nihil. Ex optio similique necessitatibus minima harum porro reprehenderit nostrum impedit, at. Vitae, vero, repudiandae. Vero deleniti reprehenderit animi.
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quia quam assumenda facilis ab aut, sunt fuga et cum fugit tempore nihil. Ex optio similique necessitatibus minima harum porro reprehenderit nostrum impedit, at. Vitae, vero, repudiandae. Vero deleniti reprehenderit animi.

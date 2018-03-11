@@ -1,0 +1,26 @@
+.footer {
+    width:               100%;
+    min-height:          100px;
+    color:               $main-nav-color;
+    border-top:          2px solid darken($btn-color-1, 50);
+    background-color:    darken($btn-color-1, 20);
+    &__content {
+        margin-left:          5%;
+        margin-right: 30%;
+
+        display:         flex;
+        align-items:     center;
+        justify-content: space-between;
+    }
+    a.footer__logo {
+        .icon {
+            width:       100px;
+            height:      80px;
+            color:       $main-nav-color;
+            fill:        currentColor;
+            &:hover {
+                color:   $main-nav-color;
+            }
+        }
+    }
+}
