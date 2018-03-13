@@ -27,7 +27,6 @@
     "gulp-uncss": "^1.0.6"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
     "fotorama": "^4.6.4",
     "jquery": "~3.2.1",
     "normalize.css": "~7.0.0",

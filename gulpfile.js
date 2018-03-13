@@ -32,6 +32,9 @@ $.gulp.task('default', $.gulp.series(
     'sprite:svg'
   ),
   $.gulp.parallel(
+    "uncss"
+  ),
+  $.gulp.parallel(
     'watch',
     'serve'
   )

@@ -1,0 +1,99 @@
+@import "vars.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/variables.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/mixins.scss";
+@import "mixins.scss";
+//
+// Import UIkit components
+//
+
+// Base
+@import "../libs/uikit3.0.0_beta_40/scss/components/variables.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/mixin.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/base.scss";
+
+// Elements
+@import "../libs/uikit3.0.0_beta_40/scss/components/link.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/heading.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/divider.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/list.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/description-list.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/table.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/icon.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/form-range.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/form.scss"; // After: Icon, Form Range
+@import "../libs/uikit3.0.0_beta_40/scss/components/button.scss";
+
+// Layout
+@import "../libs/uikit3.0.0_beta_40/scss/components/section.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/container.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/grid.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/tile.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/card.scss";
+
+// Common
+@import "../libs/uikit3.0.0_beta_40/scss/components/close.scss"; // After: Icon
+@import "../libs/uikit3.0.0_beta_40/scss/components/spinner.scss"; // After: Icon
+@import "../libs/uikit3.0.0_beta_40/scss/components/totop.scss"; // After: Icon
+@import "../libs/uikit3.0.0_beta_40/scss/components/marker.scss"; // After: Icon
+@import "../libs/uikit3.0.0_beta_40/scss/components/alert.scss"; // After: Close
+@import "../libs/uikit3.0.0_beta_40/scss/components/badge.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/label.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/overlay.scss"; // After: Icon
+@import "../libs/uikit3.0.0_beta_40/scss/components/article.scss"; // After: Subnav
+@import "../libs/uikit3.0.0_beta_40/scss/components/comment.scss"; // After: Subnav
+@import "../libs/uikit3.0.0_beta_40/scss/components/search.scss"; // After: Icon
+
+// Navs
+@import "../libs/uikit3.0.0_beta_40/scss/components/nav.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/navbar.scss"; // After: Card, Grid, Nav, Icon, Search
+@import "../libs/uikit3.0.0_beta_40/scss/components/subnav.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/breadcrumb.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/pagination.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/tab.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/slidenav.scss"; // After: Icon
+@import "../libs/uikit3.0.0_beta_40/scss/components/dotnav.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/thumbnav.scss";
+
+// JavaScript
+@import "../libs/uikit3.0.0_beta_40/scss/components/accordion.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/drop.scss"; // After: Card
+@import "../libs/uikit3.0.0_beta_40/scss/components/dropdown.scss"; // After: Card
+@import "../libs/uikit3.0.0_beta_40/scss/components/modal.scss"; // After: Close
+@import "../libs/uikit3.0.0_beta_40/scss/components/lightbox.scss"; // After: Close
+@import "../libs/uikit3.0.0_beta_40/scss/components/slideshow.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/slider.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/sticky.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/offcanvas.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/switcher.scss";
+// Scrollspy
+// Toggle
+// Scroll
+
+// Additional
+@import "../libs/uikit3.0.0_beta_40/scss/components/iconnav.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/notification.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/tooltip.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/placeholder.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/progress.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/sortable.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/countdown.scss";
+
+// Utilities
+@import "../libs/uikit3.0.0_beta_40/scss/components/animation.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/width.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/text.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/column.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/cover.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/background.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/align.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/utility.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/flex.scss"; // After: Utility
+@import "../libs/uikit3.0.0_beta_40/scss/components/margin.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/padding.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/position.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/transition.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/visibility.scss";
+@import "../libs/uikit3.0.0_beta_40/scss/components/inverse.scss";
+
+// Need to be loaded last
+@import "../libs/uikit3.0.0_beta_40/scss/components/print.scss";
